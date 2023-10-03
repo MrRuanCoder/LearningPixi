@@ -18,9 +18,9 @@ let Application = PIXI.Application,
 let app = new Application({ 
     width: 256, 
     height: 256,                       
-    antialiasing: true, 
-    transparent: false, 
-    resolution: 1
+    antialiasing: true,     //antialiasing（抗锯齿）: 这是一个布尔值，用于控制是否启用抗锯齿。如果设置为 true，则启用抗锯齿，这可以使图形看起来更加平滑。如果设置为 false，则禁用抗锯齿，可能会降低图形渲染的质量，但可以提高性能。
+    transparent: false,     //transparent（透明）: 这是一个布尔值，用于指定画布是否应该是透明的。如果设置为 true，则画布背景可以是透明的，允许其他内容显示在画布下面。
+    resolution: 1       //resolution（分辨率）: 这是一个数字，表示渲染器的分辨率比例。默认值为 1，表示与屏幕分辨率一致。如果设置为大于 1 的值，渲染器将以更高的分辨率渲染
   }
 );
 

@@ -134,7 +134,7 @@ function setup() {
   outerBar.endFill();
   healthBar.addChild(outerBar);
 
-  healthBar.outer = outerBar;
+  healthBar.outer = outerBar;   //outerBar 则是这个血条对象中的一个子元素，表示血条的外部部分，包括边框等。
 
   //Create the `gameOver` scene
   gameOverScene = new Container();

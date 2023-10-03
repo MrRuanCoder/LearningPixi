@@ -45,7 +45,7 @@ function setup() {
   //Any functions added to the `ticker` will be called 60 times per second.
   //This means that the `gameLoop` function (defined in the code ahead) will be updated
   //60 times per second. 
-  app.ticker.add(delta => gameLoop(delta));
+  app.ticker.add(delta => gameLoop(delta));//它接受一个参数 delta，代表了自上一帧以来经过的时间（通常以毫秒为单位)每秒60帧
 }
 
 function gameLoop(delta){

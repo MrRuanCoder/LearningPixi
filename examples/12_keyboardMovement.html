@@ -60,7 +60,7 @@ function setup() {
     //If the left arrow has been released, and the right arrow isn't down,
     //and the cat isn't moving vertically:
     //Stop the cat
-    if (!right.isDown && cat.vy === 0) {
+    if (!right.isDown && cat.vy === 0) {        //isDown跟踪键盘键是否被按下。
       cat.vx = 0;
     }
   };
@@ -143,7 +143,7 @@ function keyboard(keyCode) {
       key.isDown = false;
       key.isUp = true;
     }
-    event.preventDefault();
+    event.preventDefault();     //确保事件不会触发其通常会引发的浏览器行为
   };
 
   //Attach event listeners
